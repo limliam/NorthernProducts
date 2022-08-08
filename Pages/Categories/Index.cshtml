@@ -1,0 +1,42 @@
+﻿@page
+@model NorthernProducts.Pages.Categories.IndexModel
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>Categories</h1>
+
+<p>
+    <br />
+    <a asp-page="Create" class="btn btn-outline-success btn-sm">
+        <i class="far fa-plus-square"></i>
+        Add Category
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].CategoryName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Category)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.CategoryId" class="btn btn-outline-warning btn-sm">Edit</a> 
+                    <a asp-page="./Details" asp-route-id="@item.CategoryId" class="btn btn-outline-secondary btn-sm">Details</a> 
+                    <a asp-page="./Delete" asp-route-id="@item.CategoryId" class="btn btn-outline-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

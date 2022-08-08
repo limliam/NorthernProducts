@@ -1,0 +1,61 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-left">
+    <h1 class="text-center">ASP.NET Core 6.0 Web App / Azure App Service (Demo Project)</h1>
+    <hr />
+
+    <p>
+        This is a project that demonstrates CRUD Operations (Create, Read, Update and Delete)
+        with <strong>ASP.NET Core 6.0 Web App (Razor Pages / MVC)</strong> using <strong>Entity Framework Core</strong> and <strong>SQLite/SqlServer</strong>.
+    </p>
+
+    <p>
+        This web app is developed in <strong>Visual Studio 2022</strong> and publised in <strong>Microsoft Azure Cloud App Service</strong>.
+    </p>
+
+    <p>
+        <h5><a asp-area="" asp-page="/Products/Index">Go to the Demo Project (Northern Products)</a></h5>
+    </p>
+
+    <p>
+        <h5><a asp-area="" asp-page="#">Go to GitHub</a></h5>
+    </p>
+
+    <p>
+        <h5><a asp-area="" asp-page="/About">Go to About Me (Resume)</a></h5>
+    </p>
+
+    <p>This demo web app project includes the usages of followings:</p>
+
+    <ul>
+        <li>ASP.NET Core 6.0 Web App (C#)</li>
+        <li>Rager Pages / MVC</li>
+        <li>Publish to Azure App Service</li>
+        <li>Entity Framework Core Model</li>
+        <li>Dependency Injection</li>
+        <li>DB Connection / Configuration to SQLite / MS Sql Server </li>
+        <li>Database Migration / Update</li>
+        <li>Scaffolding Razor Pages / MVC Controllers</li>
+        <li>Layout Page</li>
+        <li>jQuery</li>
+        <li>Bootstrap / Font Awesome</li>
+        <li>Data Seed</li>
+        <li>Form Validation (both client and server sides)</li>
+        <li>Form Submission</li>
+        <li>CRUD Operations (Create, Read, Update and Delte Records)</li>
+    </ul>
+
+    <p>Note. SQLite can be replaced with other databases such as SqlServer or MongoDB.</p>
+
+    <p>How to switch database:</p>
+    <ul>
+        <li>Switch Database connection string in appsettings.json</li>
+        <li>Switch Dependency Injection code in Program.cs</li>
+        <li>Delete and create migration files (e.g. Package Manager Console > add-migration Initial)</li>
+        <li>Update database (e.g. Package Manager Console > Update-Database) </li>
+    </ul>
+</div>
